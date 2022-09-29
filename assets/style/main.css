@@ -1,0 +1,224 @@
+
+.carousel img{
+    max-height:15vh;
+    object-fit: contain;
+}
+
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(185deg, rgba(2,0,36,1) 0%, rgba(212,197,226,1) 0%, rgba(227,217,208,1) 44%, rgba(244,241,187,1) 100%, rgba(0,0,0,1) 100%);
+}
+
+
+/* header */
+
+header{
+    background-color: rgb(212, 197, 226);
+}
+
+.navbar-brand{
+    width: 9rem;
+}
+
+.navbar{
+    min-height: 9vh;
+}
+
+.nav-item a:hover{
+    color: #fff;
+}
+
+/* main */
+
+.carousel{
+    height: 30vh;
+}
+
+main{
+    min-height: 66vh;
+}
+
+
+.cont-cards{
+    min-height: 55vh;
+}
+
+.card-p{
+    background-color: rgb(255, 255, 255);
+    width: 16rem;
+    height: 22rem;
+    border-radius: .8rem;
+
+}
+
+.t-cardp{
+    width: 100%;
+    font-weight: bold;
+}
+
+.card-p img{
+    width: 100%;
+    min-height: 10rem;
+    object-fit: cover;
+    border-radius: .8rem .8rem 0 0;
+}
+
+.card-p-title{
+    width: 100%;
+    height: 5rem;
+}
+
+.card-p-text{
+    height: 10rem;
+}
+
+
+.card-p:hover {
+	-webkit-animation: shadow-drop-2-br 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-2-br 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes shadow-drop-2-br {
+    0% {
+      -webkit-transform: translateZ(0) translateX(0) translateY(0);
+              transform: translateZ(0) translateX(0) translateY(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px) translateX(-12px) translateY(-12px);
+              transform: translateZ(50px) translateX(-12px) translateY(-12px);
+      -webkit-box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+              box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+    }
+  }
+  @keyframes shadow-drop-2-br {
+    0% {
+      -webkit-transform: translateZ(0) translateX(0) translateY(0);
+              transform: translateZ(0) translateX(0) translateY(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px) translateX(-12px) translateY(-12px);
+              transform: translateZ(50px) translateX(-12px) translateY(-12px);
+      -webkit-box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+              box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+    }
+  }
+
+  .c-b{
+    background-color: rgb(115, 92, 221) !important;
+    color: rgb(196, 196, 196);
+}
+  
+
+  .card-p .btn:hover{
+    color: #fff !important;
+  }
+
+
+  .mensajeError{
+    color: #87867d;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    width: 60rem;
+    height: 6rem;
+  }
+
+  .mensajeError img{
+    width: 5vw;
+  }
+/* footer */
+
+footer{
+    min-height: 9.5vh;
+    background-color: #f4f1bb;
+}
+
+footer .container{
+    min-height: 9.5vh;
+}
+
+footer img{
+    width: 2rem;
+}
+
+
+/* main contact */
+
+.container-contact{
+    width: 65%;
+    min-height: 60vh;
+    background-color: rgba(219, 15, 250, 0.096);
+    border-radius: 2rem;
+}
+
+.container-contact input{
+    border: none;
+}
+
+
+@media (max-width:770px){
+
+    .container-contact{
+        width: 90%;
+    }
+}
+
+
+/* main stats */
+
+table{
+    width: 100%;
+    background-color: rgba(219, 15, 250, 0.023);
+    border-radius: 2rem;
+}
+
+
+
+/* card details */
+
+.main-details{
+    min-height: 81vh;
+}
+.card-details{
+    background-color: rgb(255, 255, 255);
+    min-width: 70vw;
+    min-height: 60vh;
+    box-shadow: -30px 30px 20px rgba(0,0,0,0.3);
+    border-radius: 1rem;
+}
+
+.details-text{
+    border: 2px rgba(0, 0, 0, 0.066) solid;
+    min-width: 30vw;
+    min-height: 70vh;
+    border-radius: 1rem;
+}
+
+.details-img{
+    width: 45vw;
+    height: 100%;
+    border-radius: 1rem;
+    
+}
+
+.details-img img{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+@media (max-width:996px){
+    
+    .card-details{
+        flex-direction: column !important;
+    }
+
+    .details-img img{
+        height: 40vh;
+    }
+
+}
