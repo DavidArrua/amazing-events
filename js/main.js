@@ -30,7 +30,7 @@ const app = Vue.
 		},
 		created() {
 			this.events.push('events')
-			fetch('http://amazing-events.herokuapp.com/api/events')
+			fetch('https://amazing-events.herokuapp.com/api/events')
 				.then((response) => response.json())
 				.then((json) => {
 					let docTitle = document.title;
