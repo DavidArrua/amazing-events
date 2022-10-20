@@ -34,6 +34,32 @@ header{
     height: 30vh;
 }
 
+.carousel .carousel-item{
+    height: 30vh;
+}
+
+.bg-carousel-1{
+    background-image: url(../img/evento1.jpg);
+    object-fit: contain;
+}
+
+.bg-carousel-2{
+    background-image: url(../img/evento2.jpg);
+    object-fit: contain;
+}
+
+
+.bg-carousel-3{
+    background-image: url(../img/evento3.jpg);
+    object-fit: contain;
+    background-position: 0vh -8vw;
+}
+
+
+.carousel .carousel-item img{
+    object-fit: contain;
+}
+
 main{
     min-height: 66vh;
 }
